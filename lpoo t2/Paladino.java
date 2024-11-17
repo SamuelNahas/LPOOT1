@@ -1,5 +1,5 @@
 public class Paladino extends Personagem {
-    public Paladino(double saude, double forca, double destreza, Arma arma) {
-        super("Paladino", saude, forca, destreza, arma);
+    public Paladino(double saude, double forca, double destreza, ArmaPaladino armaPaladino) {
+        super("Paladino", saude, forca, destreza, armaPaladino);
     }
 }

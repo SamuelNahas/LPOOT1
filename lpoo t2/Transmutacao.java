@@ -1,5 +1,5 @@
 public class Transmutacao extends ArmaMago {
-    public Transmutacao(String nome, double modificador) {
-        super(nome, modificador);
+    public Transmutacao() {
+        super("Magia da transmutação", 0.25);
     }
 }

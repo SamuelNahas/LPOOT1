@@ -1,6 +1,6 @@
 public class Lanca extends ArmaPaladino {
 
-    public Lanca(String nome, double modificador) {
-        super(nome, modificador);
+    public Lanca() {
+        super("Lança", 0.5);
     }
 }
