@@ -1,17 +1,17 @@
-public class Arma {
+public abstract class Arma {
     private String nome;
-    private double modificador;
+    private double modDano;
 
     public Arma(String nome, double modificador) {
         this.nome = nome;
-        this.modificador = modificador;
+        this.modDano = modificador;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public double getModificador() {
-        return modificador;
+    public double getModificadorDano() {
+        return modDano;
     }
 }

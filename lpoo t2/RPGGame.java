@@ -5,14 +5,12 @@ public class RPGGame {
         Scanner scanner = new Scanner(System.in);
 
         // Criando armas
-        Arma magiaTransmutacao = new Arma("Magia da Transmutação", 0.25);
-        Arma psiKappa = new Arma("Psi-kappa", 0.5);
-        Arma espada = new Arma("Espada", 0.3);
-        Arma lanca = new Arma("Lança", 0.5);
-        Arma martelo = new Arma("Martelo", 0.6);
-
-
-        Arma maca = new Arma("Maça", 0.4);
+        ArmaMago magiaTransmutacao = new Transmutacao("Magia da Transmutação", 0.25);
+        ArmaMago psiKappa = new Psikappa("Psi-kappa", 0.5);
+        ArmaPaladino espada = new Espada("Espada", 0.3);
+        ArmaPaladino lanca = new Lanca("Lança", 0.5);
+        ArmaClerigo martelo = new Martelo("Martelo", 0.6);
+        ArmaClerigo maca = new Maca("Maça", 0.4);
 
         // Criação dos personagens com base na entrada do usuário
         System.out.println("Criação do primeiro personagem: ");
@@ -22,8 +20,8 @@ public class RPGGame {
         Personagem personagem2 = PersonagemFactory.criarPersonagem(scanner, magiaTransmutacao, psiKappa, espada, lanca, martelo, maca);
 
         // Exibindo os personagens criados
-        System.out.println(personagem1);
-        System.out.println(personagem2);
+        personagem1.printStatus();
+        personagem2.printStatus();
 
         // Loop para a sequência de ataques
         while (true) {
